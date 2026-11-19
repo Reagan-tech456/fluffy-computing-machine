@@ -16,8 +16,7 @@ if (menuButton && navigation) {
   });
 }
 
-// This sample contact form creates an email using the visitor's email application.
-// Change this address to your own email before publishing the website.
+// This sample contact form opens the visitor's email application.
 const contactForm = document.querySelector('#contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', function (event) {
@@ -26,7 +25,7 @@ if (contactForm) {
     const name = document.querySelector('#name').value.trim();
     const email = document.querySelector('#email').value.trim();
     const message = document.querySelector('#message').value.trim();
-    const recipient = 'your.email@example.com';
+    const recipient = 'reaganmuraguri74@gmail.com';
 
     if (!name || !email || !message) {
       document.querySelector('#formNote').textContent = 'Please complete all the fields before sending.';
@@ -34,7 +33,7 @@ if (contactForm) {
     }
 
     const subject = encodeURIComponent('Portfolio message from ' + name);
-    const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+    const body = encodeURIComponent('Name: ' + name + '\\nEmail: ' + email + '\\n\\nMessage:\\n' + message);
     window.location.href = 'mailto:' + recipient + '?subject=' + subject + '&body=' + body;
     document.querySelector('#formNote').textContent = 'Your email application should open with the message. Send it there to complete the process.';
   });
