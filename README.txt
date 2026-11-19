@@ -1,4 +1,12 @@
-PERSONAL PORTFOLIO WEBSITE – README
+PERSONAL PORTFOLIO WEBSITE – REAGAN MWANGI
+
+PERSONAL DETAILS
+Name: REAGAN MWANGI
+Course: Diploma in Computer Science – Level 6
+Institution: KIAMBU INSTITUTE OF SCIENCE AND TECHNOLOGY
+Interests: Web development, programming and technology
+Career goal: Become a software developer
+Public contact email: reaganmuraguri74@gmail.com
 
 FILES
 - index.html     Home page
@@ -8,15 +16,14 @@ FILES
 - contact.html   Contact page
 - style.css      Styles shared by all pages
 - script.js      Mobile navigation, footer year and contact form behaviour
-- images/        Image folder (currently contains a replaceable profile placeholder)
+- images/        Image folder with a replaceable profile placeholder
 
 PERSONALISE BEFORE SUBMISSION
-1. Replace every instance of "Your Name" with your full name.
-2. Replace the profile placeholder at images/profile.svg with your own clear photo. You may save your photo as images/profile.jpg and change the image src in index.html to images/profile.jpg.
-3. Update the college name and study period on about.html.
-4. Update the skill levels to reflect your real abilities.
-5. Replace the three sample projects with at least three projects you have actually worked on. Add project screenshots if you have them.
-6. On contact.html, update the email, phone number and town. In script.js, change recipient = 'your.email@example.com' to your real email address.
+1. Replace the profile placeholder at images/profile.svg with your own clear photo. Save the photo in the images folder and update the image src in index.html to match its filename.
+2. Add your study years on about.html.
+3. Add your actual proficiency levels for HTML, CSS, JavaScript and SQL on skills.html. Add soft skills that genuinely describe you.
+4. Replace the three example project descriptions on projects.html with at least three projects you have actually completed. Add any project screenshots if available.
+5. Add your town or county on contact.html only if you want it displayed publicly. Your phone number is not included.
 
 TESTING
 - Open index.html in a web browser.
@@ -28,8 +35,8 @@ PUBLISH USING GITHUB PAGES
 1. Open the repository Settings and select Pages.
 2. Under Build and deployment, choose Deploy from a branch.
 3. Select the main branch and /(root), then Save.
-4. Your site URL will normally look like:
-   https://Reagan-tech456.github.io/fluffy-computing-machine/
+4. Your site URL will normally be:
+   https://reagan-tech456.github.io/fluffy-computing-machine/
 5. Open the live URL and test all five pages. Submit that live link and a screenshot of the home page.
 
 NOTE
