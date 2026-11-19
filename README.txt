@@ -8,36 +8,47 @@ Interests: Web development, programming and technology
 Career goal: Become a software developer
 Public contact email: reaganmuraguri74@gmail.com
 
-FILES
+PORTFOLIO FILES
 - index.html     Home page
 - about.html     About Me page
 - skills.html    Skills page
 - projects.html  Projects page
 - contact.html   Contact page
-- style.css      Styles shared by all pages
-- script.js      Mobile navigation, footer year and contact form behaviour
-- images/        Image folder with a replaceable profile placeholder
+- style.css      Shared portfolio styles
+- script.js      Portfolio navigation and contact form behaviour
+- images/        Portfolio image folder
+
+PROJECT FILES
+- student-registration.html   Student registration form practice project
+- javascript-calculator.html  JavaScript calculator practice project
+- school-website/index.html   Greenfield Academy sample school website
+- school-website/style.css    School website styles
+- school-website/script.js    School website mobile navigation and footer year
 
 PERSONALISE BEFORE SUBMISSION
 1. Replace the profile placeholder at images/profile.svg with your own clear photo. Save the photo in the images folder and update the image src in index.html to match its filename.
 2. Add your study years on about.html.
 3. Add your actual proficiency levels for HTML, CSS, JavaScript and SQL on skills.html. Add soft skills that genuinely describe you.
-4. Replace the three example project descriptions on projects.html with at least three projects you have actually completed. Add any project screenshots if available.
-5. Add your town or county on contact.html only if you want it displayed publicly. Your phone number is not included.
+4. The Greenfield Academy school website is a fictional sample design. Change its school name, address, contact information and learning programme details before adapting it for a real school.
+5. Replace the project examples or sample versions with your original college submissions if they are different.
 
 TESTING
 - Open index.html in a web browser.
-- Click every navigation link and test the menu at a narrow/mobile screen width.
-- Test the contact form. It opens the visitor's default email application; it does not store or send messages on a server.
-- Check that your own photo and all project details appear correctly.
+- Click every navigation link and project link.
+- Test the mobile navigation at a narrow screen width.
+- The registration form displays a confirmation message but does not save records in a database.
+- The calculator performs basic arithmetic operations and handles division by zero.
+- The school website uses sample school information and placeholder contact details.
 
 PUBLISH USING GITHUB PAGES
-1. Open the repository Settings and select Pages.
+1. Open repository Settings and select Pages.
 2. Under Build and deployment, choose Deploy from a branch.
 3. Select the main branch and /(root), then Save.
-4. Your site URL will normally be:
+4. Portfolio URL:
    https://reagan-tech456.github.io/fluffy-computing-machine/
-5. Open the live URL and test all five pages. Submit that live link and a screenshot of the home page.
+5. School website URL:
+   https://reagan-tech456.github.io/fluffy-computing-machine/school-website/
+6. Open both live URLs and test all links.
 
 NOTE
-The website uses Google Fonts DM Sans and Manrope. If the visitor is offline, the browser will use its fallback fonts.
+The websites use Google Fonts. If a visitor is offline, the browser will use fallback fonts.
