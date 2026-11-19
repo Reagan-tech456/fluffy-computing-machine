@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f5f8;
+      margin: 0;
+      padding: 25px;
+    }
+    .calculator {
+      max-width: 400px;
+      margin: 60px auto;
+      padding: 25px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px #cccccc;
+    }
+    h1 {
+      text-align: center;
+      color: #173b5e;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      box-sizing: border-box;
+      border: 1px solid #bbbbbb;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 18px;
+      background-color: #173b5e;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #2c638d;
+    }
+    #result {
+      margin-top: 20px;
+      text-align: center;
+      color: #173b5e;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h1>JavaScript Calculator</h1>
+
+    <label for="num1">First Number</label>
+    <input type="number" id="num1" placeholder="Enter first number">
+
+    <label for="operator">Choose Operation</label>
+    <select id="operator">
+      <option value="+">Addition (+)</option>
+      <option value="-">Subtraction (-)</option>
+      <option value="*">Multiplication (*)</option>
+      <option value="/">Division (/)</option>
+    </select>
+
+    <label for="num2">Second Number</label>
+    <input type="number" id="num2" placeholder="Enter second number">
+
+    <button type="button" onclick="calculate()">Calculate</button>
+    <button type="button" onclick="clearForm()">Clear</button>
+
+    <p id="result">Result will appear here.</p>
+  </div>
+
+  <script>
+    function calculate() {
+      let number1 = document.getElementById("num1").value;
+      let number2 = document.getElementById("num2").value;
+      let operator = document.getElementById("operator").value;
+
+      if (number1 === "" || number2 === "") {
+        document.getElementById("result").innerHTML =
+          "Please enter both numbers.";
+        return;
+      }
+
+      number1 = Number(number1);
+      number2 = Number(number2);
+
+      let answer;
+
+      if (operator === "+") {
+        answer = number1 + number2;
+      } else if (operator === "-") {
+        answer = number1 - number2;
+      } else if (operator === "*") {
+        answer = number1 * number2;
+      } else if (operator === "/") {
+        if (number2 === 0) {
+          document.getElementById("result").innerHTML =
+            "Cannot divide by zero.";
+          return;
+        }
+        answer = number1 / number2;
+      }
+
+      document.getElementById("result").innerHTML = "Answer: " + answer;
+    }
+
+    function clearForm() {
+      document.getElementById("num1").value = "";
+      document.getElementById("num2").value = "";
+      document.getElementById("operator").value = "+";
+      document.getElementById("result").innerHTML = "Result will appear here.";
+    }
+  </script>
+</body>
+</html>
